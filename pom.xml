@@ -8,5 +8,23 @@
     <artifactId>java-features-examples</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>11</release>
+                    <source>8</source>
+                    <target>8</target>  <!--or <release>10</release>-->
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+
 
 </project>
