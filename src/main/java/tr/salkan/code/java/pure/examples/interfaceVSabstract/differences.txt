@@ -1,0 +1,54 @@
+Abstract Class vs Interface
+----------------------------
+
+           Abstract  ->
+           Interface ->
+
+
+        Default Method Implementation
+
+           Abstract  -> It can have default method implementation
+           Interface -> Interfaces provide pure abstraction & can not have implementation at all
+
+        Variables
+
+             Abstract  -> It may contain non-final variables.
+             Interface -> default final
+
+        Keyword Used
+
+             Abstract  -> extends
+             Interface -> implements
+
+        Access Modifiers
+
+             Abstract  ->  public, protected, private and default
+             Interface ->  public
+
+        Normal Class
+
+             Abstract  ->   It can extend only one abstract class
+             Interface ->   implement multiple interfaces
+
+
+
+
+When to use Abstract Class & When to use Interface?
+---------------------------------------------------
+
+Abstract Class
+
+        Some related classes that need to share the same lines of code
+        When you want to define the non-static or non-final fields
+        Methods or fields or require access modifiers other than public (such as protected and private)
+
+
+Interface
+
+        Pure abstraction
+        Multiple inheritance, implement more than one interface
+        When you want to specify the behavior of a particular data type, but not concerned about who implements its behavior.
+
+
+
+
