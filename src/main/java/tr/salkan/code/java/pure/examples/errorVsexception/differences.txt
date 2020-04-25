@@ -1,0 +1,25 @@
+
+BASIS FOR COMPARISON	        ERROR	                        EXCEPTION
+
+Basic	                      An error is caused due to         An exception is caused because of the code.
+                              lack of system resources.
+
+Recovery	                   An error is irrecoverable.	    An exception is recoverable.
+
+Keywords	                  There is no means to handle      	Exceptions are handled using three keywords "try", "catch", and "throw".
+                              an error by the program code.
+
+Consequences                 As the error is detected           As an exception is detected, it is thrown and caught by the "throw" and "catch" keywords correspondingly.
+                             the program will terminated
+                             abnormally
+
+Types	                    Errors are classified as            Exceptions are classified as checked or unchecked type.
+                            unchecked type.
+
+Package	                    "java.lang.Error"	                "java.lang.Exception".
+
+Example	                    OutOfMemory, StackOverFlow.	        Checked Exceptions : NoSuchMethod, ClassNotFound.
+                                                                Unchecked Exceptions : NullPointer, IndexOutOfBounds.
+
+Checked Exceptions   : In compile time, force to handle exceptions : FileNotFoundException
+Unchecked Excepitons : Compiler is not force to handle exceptions : NullPointerException
