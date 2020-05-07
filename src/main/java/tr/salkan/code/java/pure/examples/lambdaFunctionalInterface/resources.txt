@@ -1,0 +1,27 @@
+
+Interface	            Description	                                                            Function Method
+
+Consumer<T>	            Accepts a single input of type T and returns no values.	                void accept(T t)
+
+Supplier<T>	            Accepts no inputs and returns a value of type T	                        T get()
+
+Function<T,R>	        Accepts input of type T and returns a value of type R	                R apply(T t)
+
+Predicate<T>	        Accepts a single input argument of type T and returns boolean.	        boolean test(T t)
+
+BiXXX interfaces	    The interfaces starting with Bi i.e. of form BiXXX are another
+                        versions of one of the above interfaces with one difference,
+                        they take two arguments of different type instead of one and
+                        returns no values. This doesn't apply to Supplier<T>,
+                        as it doesn't take any arguments but just returns(supplies)
+                        a type T.
+
+
+UnaryOperator<T>	    A special type of Function but accepts and returns the same type T	    T apply(T t);
+
+primitiveXXX type	    The ones with starting with some primitive data type e.g. IntConsumer.
+                        They either accept or return primitive java type instead of some
+                        Object type.
+
+BinaryOperator<T>	    A special type of BiFunction but accepts two aruments of same type
+                        and returns the same type as well. T	                                T apply(T t, T u);
